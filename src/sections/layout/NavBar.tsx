@@ -47,13 +47,13 @@ export default function NavBar({ darkMode, switchDarkMode }: Props) {
         }}
         enableColorOnDark
       >
-        <Toolbar variant="dense">
+        <Toolbar>
           <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: "min(0.5vw, 0.6rem)", padding: 1, my: 1 }}
+            sx={{ mr: "min(0.5vw, 0.6rem)" }}
             onClick={() => setDrawerOpen((val) => !val)}
           >
             <Icon icon="mdi:menu" />
@@ -87,17 +87,6 @@ export default function NavBar({ darkMode, switchDarkMode }: Props) {
           >
             <IconButton color="inherit" component="span">
               <Icon icon="ri:discord-fill" />
-            </IconButton>
-          </StyledIconButtonLink>
-
-          <StyledIconButtonLink
-            href="https://github.com/GuillaumeSD/Chesskit"
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{ ml: "min(0.6rem, 0.8vw)" }}
-          >
-            <IconButton color="inherit" component="span">
-              <Icon icon="mdi:github" />
             </IconButton>
           </StyledIconButtonLink>
 
